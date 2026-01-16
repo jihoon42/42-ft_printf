@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
+/*   By: jkim2 <jkim2@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 08:19:35 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/16 13:16:06 by jkim2            ###   ########.fr       */
+/*   Updated: 2026/01/16 18:01:05 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putptr(uintptr_t nbr)
+int	ft_putptr(unsigned long long nbr)
 {
 	char	*chars;
 	int		count;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
+/*   By: jkim2 <jkim2@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:24:18 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/16 14:48:28 by jkim2            ###   ########.fr       */
+/*   Updated: 2026/01/16 18:01:05 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	check_format(const char *str, va_list *par, int i)
 	else if (str[i] == 'x' || str[i] == 'X')
 		return (ft_print_x(va_arg(*par, unsigned int), str[i]));
 	else if (str[i] == 'p')
-		return (ft_print_p((uintptr_t)va_arg(*par, void *)));
+		return (ft_print_p((unsigned long long)va_arg(*par, void *)));
 	else if (str[i] == '%')
 		return (ft_print_c('%'));
 	return (0);

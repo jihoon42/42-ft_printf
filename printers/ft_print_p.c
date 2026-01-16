@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_p.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
+/*   By: jkim2 <jkim2@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:14:08 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/16 15:09:38 by jkim2            ###   ########.fr       */
+/*   Updated: 2026/01/16 18:01:05 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_p(uintptr_t adr)
+int	ft_print_p(unsigned long long adr)
 {
 	int	count;
 	int	ret;
