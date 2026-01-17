@@ -6,7 +6,7 @@
 /*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 09:56:12 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/17 13:46:31 by jkim2            ###   ########.fr       */
+/*   Updated: 2026/01/17 18:19:47 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+
+# ifdef __linux__
+#  define NULL_PTR "(nil)"
+# else
+#  define NULL_PTR "0x0"
+# endif
 
 int		ft_printf(const char *input_str, ...);
 
