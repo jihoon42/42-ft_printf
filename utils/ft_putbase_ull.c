@@ -1,21 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_putbase_ull.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/16 08:19:35 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/17 13:46:31 by jkim2            ###   ########.fr       */
+/*   Created: 2026/01/18 16:02:00 by jkim2             #+#    #+#             */
+/*   Updated: 2026/01/18 16:02:00 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putptr(unsigned long long nbr)
+int	ft_putbase_ull(unsigned long long nbr, char *chars, unsigned int base)
 {
-	char	*chars;
+	int	count;
+	int	ret;
 
-	chars = "0123456789abcdef";
-	return (ft_putbase_ull(nbr, chars, 16));
+	count = 0;
+	if (nbr >= base)
+	{
+		ret = ft_putbase_ull(nbr / base, chars, base);
+		if (ret < 0)
+			return (-1);
+		count += ret;
+		ret = ft_putbase_ull(nbr % base, chars, base);
+		if (ret < 0)
+			return (-1);
+		count += ret;
+	}
+	else
+	{
+		ret = ft_print_c(chars[nbr]);
+		if (ret < 0)
+			return (-1);
+		count += ret;
+	}
+	return (count);
 }

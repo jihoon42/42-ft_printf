@@ -7,7 +7,7 @@ AR = ar rcs
 RM = rm -f
 
 SRC = ft_printf.c
-SRC_UTILS = $(addprefix utils/, ft_putchar.c ft_putnbr.c ft_putunbr.c ft_putptr.c ft_puthex.c)
+SRC_UTILS = $(addprefix utils/, ft_putchar.c ft_putnbr.c ft_putunbr.c ft_putptr.c ft_puthex.c ft_putbase_ull.c)
 SRC_PRINTERS = $(addprefix printers/, ft_print_c.c ft_print_s.c ft_print_d.c ft_print_u.c ft_print_p.c ft_print_x.c)
 
 SRCS = $(SRC) $(SRC_UTILS) $(SRC_PRINTERS)
