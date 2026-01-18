@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned int nbr, char *chars)
+int	ft_puthex(unsigned int nbr, const char *chars)
 {
 	return (ft_putbase_ull(nbr, chars, 16));
 }
