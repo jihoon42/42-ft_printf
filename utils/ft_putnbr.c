@@ -25,7 +25,7 @@ static int	ft_putnbr_recursive(unsigned int n)
 			return (-1);
 		count += ret;
 	}
-	ret = ft_print_c((n % 10) + '0');
+	ret = ft_putchar((n % 10) + '0');
 	if (ret < 0)
 		return (-1);
 	return (count + ret);
@@ -40,7 +40,7 @@ int	ft_putnbr(int nbr)
 	count = 0;
 	if (nbr < 0)
 	{
-		ret = ft_print_c('-');
+		ret = ft_putchar('-');
 		if (ret < 0)
 			return (-1);
 		count += ret;

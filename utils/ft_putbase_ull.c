@@ -31,7 +31,7 @@ int	ft_putbase_ull(unsigned long long nbr, char *chars, unsigned int base)
 	}
 	else
 	{
-		ret = ft_print_c(chars[nbr]);
+		ret = ft_putchar(chars[nbr]);
 		if (ret < 0)
 			return (-1);
 		count += ret;

@@ -25,7 +25,7 @@ int	ft_putunbr(unsigned int nbr)
 			return (-1);
 		count += ret;
 	}
-	ret = ft_print_c((nbr % 10) + '0');
+	ret = ft_putchar((nbr % 10) + '0');
 	if (ret < 0)
 		return (-1);
 	return (count + ret);
