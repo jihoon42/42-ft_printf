@@ -14,27 +14,5 @@
 
 int	ft_puthex(unsigned int nbr, char *chars)
 {
-	int	count;
-	int	ret;
-
-	count = 0;
-	if (nbr >= 16)
-	{
-		ret = ft_puthex(nbr / 16, chars);
-		if (ret < 0)
-			return (-1);
-		count += ret;
-		ret = ft_puthex(nbr % 16, chars);
-		if (ret < 0)
-			return (-1);
-		count += ret;
-	}
-	else
-	{
-		ret = ft_print_c(chars[nbr]);
-		if (ret < 0)
-			return (-1);
-		count += ret;
-	}
-	return (count);
+	return (ft_putbase_ull(nbr, chars, 16));
 }
