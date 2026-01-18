@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_putbase_ull(unsigned long long nbr, char *chars, unsigned int base)
+int	ft_putbase_ull(unsigned long long nbr, const char *chars, unsigned int base)
 {
 	int	count;
 	int	ret;
