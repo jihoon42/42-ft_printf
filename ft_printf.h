@@ -6,7 +6,7 @@
 /*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 09:56:12 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/17 18:19:47 by jkim2            ###   ########.fr       */
+/*   Updated: 2026/01/18 14:42:35 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		ft_printf(const char *input_str, ...);
 
 int		ft_putchar(char c);
 int		ft_putnbr(int nbr);
-int		ft_putunbr(unsigned int nb);
+int		ft_putunbr(unsigned int nbr);
 int		ft_putptr(unsigned long long nbr);
 int		ft_puthex(unsigned int nbr, char *chars);
 

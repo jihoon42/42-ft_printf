@@ -6,7 +6,7 @@
 /*   By: jkim2 <jkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 08:33:03 by jkim2             #+#    #+#             */
-/*   Updated: 2026/01/16 08:49:16 by jkim2            ###   ########.fr       */
+/*   Updated: 2026/01/18 14:42:35 by jkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,23 +31,23 @@ static int	ft_putnbr_recursive(unsigned int n)
 	return (count + ret);
 }
 
-int	ft_putnbr(int nb)
+int	ft_putnbr(int nbr)
 {
 	int				count;
 	int				ret;
 	unsigned int	n;
 
 	count = 0;
-	if (nb < 0)
+	if (nbr < 0)
 	{
 		ret = ft_print_c('-');
 		if (ret < 0)
 			return (-1);
 		count += ret;
-		n = -(unsigned int)nb;
+		n = -(unsigned int)nbr;
 	}
 	else
-		n = (unsigned int)nb;
+		n = (unsigned int)nbr;
 	ret = ft_putnbr_recursive(n);
 	if (ret < 0)
 		return (-1);
