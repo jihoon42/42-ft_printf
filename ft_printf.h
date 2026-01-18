@@ -29,7 +29,8 @@ int		ft_putnbr(int nbr);
 int		ft_putunbr(unsigned int nbr);
 int		ft_putptr(unsigned long long nbr);
 int		ft_puthex(unsigned int nbr, const char *chars);
-int		ft_putbase_ull(unsigned long long nbr, const char *chars, unsigned int base);
+int		ft_putbase_ull(unsigned long long nbr, const char *chars,
+			unsigned int base);
 
 int		ft_print_c(char c);
 int		ft_print_s(char *str);
