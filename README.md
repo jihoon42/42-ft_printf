@@ -171,8 +171,8 @@ make fclean
 **메모리 체크**: 힙 메모리 할당 시 누수(Memory Leak)가 발생하지 않도록 철저히 관리하였습니다.
 
 
-* **macOS**: `leaks -atExit -- ./your_program` 명령어를 통해 확인.
-* **Ubuntu**: `valgrind --leak-check=full ./your_program` 도구를 활용하여 검증.
+* **macOS**: `leaks -atExit -- ./test` 와 같이 명령어를 통해 검증.
+* **Ubuntu**: `valgrind --leak-check=full ./test` 와 같이 검증.
 
 
 
