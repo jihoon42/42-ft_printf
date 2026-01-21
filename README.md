@@ -28,7 +28,7 @@ The `ft_printf` project is a mandatory assignment in the 42 core curriculum desi
 
 ---
 
-2. Instructions 
+## 2. Instructions 
 
 ### Compilation
 
@@ -57,7 +57,7 @@ make fclean
 
 ---
 
-3. Algorithm and Data Structure (Justification) 
+## 3. Algorithm and Data Structure (Justification) 
 
 ### Hierarchical Modular Architecture
 
@@ -82,7 +82,7 @@ The project includes a platform-dependent macro (`NULL_PTR`) to handle pointer a
 
 ---
 
-4. Resources 
+## 4. Resources 
 
 ### References & Documentation
 
@@ -125,7 +125,7 @@ In compliance with the 42 AI policy, AI tools were utilized as a technical thoug
 
 ---
 
-2. Instructions 
+## 2. Instructions 
 
 ### Compilation
 
@@ -154,9 +154,9 @@ make fclean
 
 ---
 
-3. Algorithm and Data Structure (Justification) 
+## 3. Algorithm and Data Structure (Justification) 
 
-### 계층적 모듈화 (Modular Architecture)
+### 모듈화 (Modular Architecture)
 
 코드의 가독성과 유지보수성을 높이기 위해 프로젝트를 **Printers(상위 로직)**와 **Utils(하위 유틸리티)** 계층으로 분리하였습니다.
 
@@ -178,7 +178,7 @@ make fclean
 
 ---
 
-4. Resources 
+## 4. Resources 
 
 References & Further Reading 
 
