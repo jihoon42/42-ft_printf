@@ -88,7 +88,9 @@ The project includes a platform-dependent macro (`NULL_PTR`) to handle pointer a
 ### References & Documentation
 
 **Personal Technical Blog**: [Restarting C - ft_printf Analysis (Korean)](https://velog.io/@vendredi/%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-C-ep.0)
+
 **Test Suite**: [42-ft_printf-w-test](https://github.com/jihoon42/42-ft_printf-w-test) (A custom repository created to verify function robustness).
+
 **C Library Documentation**: Studied `printf(3)` and `stdarg(3)` man pages for variadic argument handling.
 
 AI Usage Disclosure 
@@ -96,7 +98,9 @@ AI Usage Disclosure
 In compliance with the 42 AI policy, AI tools were utilized as a technical thought partner for the following tasks:
 
 **Architectural Refactoring**: Assisted in modularizing the `check_format` function to ensure it adheres to the 25-line limit required by the Norm.
+
 **Edge-Case Brainstorming**: Used to identify potential pitfalls regarding `INT_MIN` and the maximum range of `unsigned long long` types.
+
 **Documentation Refinement**: Assisted in structuring this README and refining the technical justifications to ensure clarity and professional presentation.
  
 **Countermeasures**: All AI-suggested logic was manually reviewed, understood, and tested in both macOS and Linux environments to ensure accuracy and compliance.
@@ -185,6 +189,7 @@ make fclean
 References & Further Reading 
 
 **학습 정리**: [다시 시작하는 C - ft_printf 분석](https://velog.io/@vendredi/%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-C-ep.0) (공부한 내용을 정리한 블로그 포스팅)
+
 **테스트 저장소**: [42-ft_printf-w-test](https://github.com/jihoon42/42-ft_printf-w-test) (함수 검증을 위해 직접 작성한 테스트 코드)
  
 **C11 Standard**: `printf`의 반환 값 및 에러 발생 시 처리 기준 수립을 위해 참고.
@@ -196,6 +201,9 @@ AI Usage Disclosure
 42 AI 가이드라인을 준수하여 다음과 같이 AI 도구를 활용하였습니다:
 
 **작업 범위**:
+
 **구조 설계 보조**: `check_format` 함수의 가독성을 높이기 위해 복잡한 조건문을 모듈화하는 리팩토링 과정에서 조언을 구함.
+
 **경계값 분석**: `INT_MIN` 처리 및 `unsigned long long`의 최대 범위에서 발생할 수 있는 잠재적 이슈를 식별하는 데 활용.
+
 **문서화 최적화**: 기술적 정당화(Justification) 섹션의 영문 표현 및 구조를 다듬어 가독성을 향상함.
