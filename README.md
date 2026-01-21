@@ -51,6 +51,7 @@ make fclean
 
 
 **macOS**: Verified using `leaks -atExit -- ./test`.
+
 **Ubuntu**: Verified using `valgrind --leak-check=full ./test`.
 
 
@@ -148,6 +149,7 @@ make fclean
 
 
 **macOS**: `leaks -atExit -- ./test` 와 같이 명령어를 통해 검증.
+
 **Ubuntu**: `valgrind --leak-check=full ./test` 와 같이 검증.
 
 
